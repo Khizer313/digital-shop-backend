@@ -7,7 +7,7 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", "http:", "https:"], // ✅ localhost allow
+          'connect-src': ["'self'", "https:"],
           'img-src': ["'self'", "data:", "blob:", "https:"],
           'media-src': ["'self'", "data:", "blob:", "https:"],
           upgradeInsecureRequests: null,
@@ -20,8 +20,8 @@ module.exports = [
     config: {
       enabled: true,
       origin: [
-        'https://storeon.vercel.app',
-        // 'http://localhost:3000',
+        'https://storeon.vercel.app', // ✅ tumhara frontend domain
+        'http://localhost:3000',      // ✅ local dev (agar zarurat ho)
       ],
     },
   },
