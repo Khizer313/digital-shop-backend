@@ -21,8 +21,11 @@ module.exports = [
       enabled: true,
       origin: [
         'https://storeon.vercel.app', // ✅ tumhara frontend domain
-        'http://localhost:3000',      // ✅ local dev (agar zarurat ho)
+        'http://localhost:3000',      // ✅ local dev
       ],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // ✅ allow sabhi
+      headers: '*', // ✅ allow sabhi headers (Authorization waghera)
+      keepHeaderOnError: true,
     },
   },
   'strapi::poweredBy',
