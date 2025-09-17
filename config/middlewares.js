@@ -23,8 +23,8 @@ module.exports = [
         'https://storeon.vercel.app', // ✅ tumhara frontend domain
         'http://localhost:3000',      // ✅ local dev
       ],
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // ✅ allow sabhi
+      headers: '*', // ✅ allow sabhi headers (Authorization waghera)
       keepHeaderOnError: true,
     },
   },
