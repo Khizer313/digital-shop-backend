@@ -9,11 +9,13 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {
-          resource_type: "image", // ✅ safe side
+          resource_type: "image",  // ✅ safe option
         },
         delete: {},
       },
-      breakpoints: false, // ✅ responsive formats disable
+      // ❌ Pehle tum breakpoints: {} kar rahe the (jo null object error deta hai)
+      // ✅ Ye use karo:
+      breakpoints: false,
     },
   },
 });
