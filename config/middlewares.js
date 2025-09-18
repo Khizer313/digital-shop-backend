@@ -9,9 +9,7 @@ module.exports = [
         directives: {
           'connect-src': ["'self'", "https:"],
           'img-src': ["'self'", "data:", "blob:", "https:", "https://res.cloudinary.com"],
-'media-src': ["'self'", "data:", "blob:", "https:", "https://res.cloudinary.com"],
-
-
+          'media-src': ["'self'", "data:", "blob:", "https:", "https://res.cloudinary.com"],
           upgradeInsecureRequests: null,
         },
       },
@@ -20,9 +18,8 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
       origin: [
-        'https://storeon.vercel.app', // ✅ tumhara frontend domain
+        'https://storeon.vercel.app', // ✅ frontend domain
         'http://localhost:3000',      // ✅ local dev
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
