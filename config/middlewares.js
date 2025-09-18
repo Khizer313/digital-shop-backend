@@ -8,8 +8,9 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", "https:"],
-          'img-src': ["'self'", "data:", "blob:", "https:", "res.cloudinary.com"],
-'media-src': ["'self'", "data:", "blob:", "https:", "res.cloudinary.com"],
+          'img-src': ["'self'", "data:", "blob:", "https:", "https://res.cloudinary.com"],
+'media-src': ["'self'", "data:", "blob:", "https:", "https://res.cloudinary.com"],
+
 
           upgradeInsecureRequests: null,
         },

@@ -11,8 +11,8 @@ module.exports = ({ env }) => ({
         upload: {},
         delete: {},
       },
-      // 👇 Ye line add karo (Cloudinary ke URLs ko force karega)
-      breakpoints: null,
+      // 👇 Is line se Strapi responsive formats generate nahi karega
+      breakpoints: false,
     },
   },
 });
