@@ -15,7 +15,7 @@ module.exports = ({ env }) => ({
       },
       // ❌ Pehle tum breakpoints: {} kar rahe the (jo null object error deta hai)
       // ✅ Ye use karo:
-      breakpoints: false,
+      breakpoints: null,
     },
   },
 });
