@@ -8,11 +8,12 @@ module.exports = ({ env }) => ({
         api_secret: env("CLOUDINARY_SECRET"),
       },
       actionOptions: {
-        upload: {},
+        upload: {
+          resource_type: "image", // ✅ safe side
+        },
         delete: {},
       },
-      // ✅ Responsive formats ko disable karna
-      breakpoints: {}, 
+      breakpoints: false, // ✅ responsive formats disable
     },
   },
 });
