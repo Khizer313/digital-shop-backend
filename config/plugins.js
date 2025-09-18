@@ -11,8 +11,8 @@ module.exports = ({ env }) => ({
         upload: {},
         delete: {},
       },
-      // 👇 Is line se responsive formats OFF ho jaayenge
-      breakpoints: false,
+      // ✅ Responsive formats ko disable karna
+      breakpoints: {}, 
     },
   },
 });
