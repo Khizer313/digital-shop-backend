@@ -33,4 +33,23 @@ module.exports = [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+
+  // ✅ Add this block for upload
+  {
+    name: 'strapi::upload',
+    config: {
+      breakpoints: {
+        large: 1000,
+        medium: 750,
+        small: 500,
+        thumbnail: 64,
+      },
+      mimeTypes: [
+        'image/jpeg',
+        'image/png',
+        'image/webp',
+        'image/avif', // keep avif also
+      ],
+    },
+  },
 ];
